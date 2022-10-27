@@ -1,5 +1,5 @@
 module "workers" {
-  source                 = "../eks-workers"
+  source                 = "https://github.com/shaikis/terraform-aws-eks-workers.git"
   vpc_id                 = var.vpc_id
   private_subnet_ids     = var.private_subnets
   cluster_full_name      = var.cluster_full_name
