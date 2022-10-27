@@ -12,6 +12,5 @@ module "workers" {
   workers_number_min     = var.workers_number_min
   workers_storage_size   = var.workers_storage_size
   common_tags            = var.common_tags
-
-  depends_on =[module.eks]
+  depends_on             = [module.eks]
 }
