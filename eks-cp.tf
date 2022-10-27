@@ -1,5 +1,5 @@
 module "eks" {
-  source            = "https://github.com/shaikis/terraform-eks-ControlPlane.git"
+  source            = "git@github.com:shaikis/terraform-eks-ControlPlane.git"
   vpc_id            = var.vpc_id
   private_subnets   = var.private_subnets
   public_subnets    = var.public_subnets
